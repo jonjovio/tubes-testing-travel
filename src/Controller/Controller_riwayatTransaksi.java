@@ -60,7 +60,7 @@ public class Controller_riwayatTransaksi {
     public static int banyakTiket(int idTransaksi){
         conn.connect();
         
-        String query = "SELECT count(idTransaksi) AS banyakTiket FROM seat WHERE idTransaksi = " + idTransaksi;
+        String query = "SELECT count(idTransaksiTiket) AS banyakTiket FROM seat WHERE idTransaksiTiket = " + idTransaksi;
         int bnyk = -1;
         try {
             Statement stmt = conn.con.createStatement();
